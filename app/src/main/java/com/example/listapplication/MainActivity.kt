@@ -10,6 +10,7 @@ import androidx.compose.foundation.ScrollState
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.Column
+//import androidx.compose.foundation.layout.FlowColumnScopeInstance.align
 //import androidx.compose.foundation.layout.FlowRowScopeInstance.align
 
 import androidx.compose.foundation.layout.Row
@@ -40,6 +41,8 @@ import androidx.compose.ui.layout.VerticalAlignmentLine
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.SpanStyle
 import androidx.compose.ui.text.buildAnnotatedString
+import androidx.compose.ui.text.font.FontFamily
+import androidx.compose.ui.text.font.FontStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.withStyle
@@ -56,11 +59,11 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
 
         setContent {
-            PreviewCard()
+            PreviewScreen()
             }
         }
     }
-@Preview(showSystemUi = true)
+//@Preview(showSystemUi = true)
 @Composable
 fun PreviewCard() {
     // Sample list of data to display
@@ -164,19 +167,19 @@ fun card(titlename: String, category: String , times: String, img: Int) {
                     .fillMaxHeight(),  // Make sure the text takes up available width
                 textAlign = TextAlign.Center
             )
-
-
         }
-
-
     }
 }
-
+@Preview(showSystemUi = true)
 @Composable
-private fun extracted(titlename: String, category: String, times: String) {
+fun PreviewScreen(){
+    firstpage()
+}
+@Composable
+fun firstpage(){
+
 
 }
-
 
 
 
